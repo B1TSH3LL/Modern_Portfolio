@@ -1,0 +1,110 @@
+<%- include('partials/header'); %>
+    <%- include('partials/navbar'); %>
+        <div class="header-projects">
+            <h1 style="font-size: 32px;">Projects</h1>
+        </div>
+        <section class="projects-section">
+
+            <div class="project-card">
+                <img src="https://media.discordapp.net/attachments/1061030637923995849/1083424729085517904/e1a17e11-37f3-487b-a940-bc20794a9342.jpg"
+                    alt="Project 1" />
+                <h2>Anonymous Secrets</h2>
+                <p>A website where you may read other people's secrets anonymously and share your own secrets with them.
+                </p>
+                <a href="https://github.com/B1TSH3LL/Secrets" target="_blank"><i class="fas fa-external-link-alt"></i>
+                    Learn more</a>
+            </div>
+
+            <div class="project-card">
+                <img src="./img/project-VC.jpg" alt="Project 2" />
+                <h2>Virtual Keyboard</h2>
+                <p>A web application that simulates a physical keyboard and allows users to input text using their
+                    mouse.</p>
+                <a href="https://github.com/B1TSH3LL/Virtual_Keyboard" target="_blank"><i
+                        class="fas fa-external-link-alt"></i> Learn more</a>
+            </div>
+
+            <div class="project-card">
+                <img src="./img/project_green-screen.png" alt="Project 3" />
+                <h2>Green Screen</h2>
+                <p>A Javascript project that removes green screen background from images BETA.</p>
+                <a href="https://github.com/B1TSH3LL/Green-Screen" target="_blank"><i
+                        class="fas fa-external-link-alt"></i> Learn more</a>
+            </div>
+
+            <div class="project-card">
+                <img src="./img/project_portfolio.png" alt="Project 4" />
+                <h2>Portfolio</h2>
+                <p>A personal project portfolio website to display my skills and projects to potential employers or
+                    clients.</p>
+                <a href="https://github.com/B1TSH3LL/My-PortfOlio" target="_blank"><i
+                        class="fas fa-external-link-alt"></i> Learn more</a>
+            </div>
+
+        </section>
+
+        <div class="header-projects">
+            <h2 style="font-size: 32px;">More Works</h2>
+        </div>
+
+        <section class="projects-section">
+            <div class="project-card">
+                <img src="./img/project_dice_roll.png" alt="More Works 1" />
+                <h2>Dice Roll</h2>
+                <p>A dice roll allows users to simulate rolling dice by clicking a button using JavaScript.
+                </p>
+                <a href="https://github.com/B1TSH3LL/Dice_Roll" target="_blank"><i class="fas fa-external-link-alt"></i>
+                    Learn more</a>
+            </div>
+
+            <div class="project-card">
+                <img src="./img/pj-drum.png" alt="More Works 2" />
+                <h2>Drum Kits</h2>
+                <p>A drum kit website that allows users to play virtual drums by clicking on the instrument images.
+                </p>
+                <a href="https://github.com/B1TSH3LL/Drum_Kit" target="_blank"><i class="fas fa-external-link-alt"></i>
+                    Learn more</a>
+            </div>
+
+            <div class="project-card">
+                <img src="./img/pj-calc.png" alt="More Works 3" />
+                <h2>Javascript Calculator</h2>
+                <p>A JavaScript calculator that performs basic arithmetic calculations.
+                </p>
+                <a href="https://github.com/B1TSH3LL/JS_Calculator" target="_blank"><i
+                        class="fas fa-external-link-alt"></i>
+                    Learn more</a>
+            </div>
+
+            <div class="project-card">
+                <img src="./img/pj-sipp.png" alt="More Works 3" />
+                <h2>Internship Programme</h2>
+                <p>A Event Website For College Club EDC BVUCOEP Pune.
+                </p>
+                <a href="http://b1tsh3ll.me/SIPP/index.html" target="_blank"><i class="fas fa-external-link-alt"></i>
+                    Learn more</a>
+            </div>
+
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            // Add smooth scrolling to project links
+            $('a[href^="#"]').on('click', function (event) {
+                if (this.hash !== '') {
+                    event.preventDefault();
+
+                    const hash = this.hash;
+
+                    $('html, body').animate(
+                        {
+                            scrollTop: $(hash).offset().top
+                        },
+                        800, function () {
+                            window.location.hash = hash;
+                        }
+                    );
+                }
+            });
+        </script>
+        <%- include('partials/footer'); %>
